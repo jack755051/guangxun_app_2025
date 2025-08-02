@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # PostgreSQL 資料庫
+  postgres:
+    image: postgres:15
+    container_name: guangxun_postgres
+    environment:
+      POSTGRES_DB: guangxun_db
+      POSTGRES_USER: guangxun_user
+      POSTGRES_PASSWORD: guangxun_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - guangxun_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U guangxun_user -d guangxun_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # NestJS 後端
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: guangxun_backend
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - DATABASE_HOST=postgres
+      - DATABASE_PORT=5432
+      - DATABASE_USER=guangxun_user
+      - DATABASE_PASSWORD=guangxun_password
+      - DATABASE_NAME=guangxun_db
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - guangxun_network
+    command: npm run start:dev
+
+  # Angular 前端
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: guangxun_frontend
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - guangxun_network
+    command: npm start
+
+volumes:
+  postgres_data:
+
+networks:
+  guangxun_network:
+    driver: bridge
