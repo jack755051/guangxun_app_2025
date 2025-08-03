@@ -1,0 +1,1 @@
+export { MockCardEntity } from "./models/mockCard.entity";

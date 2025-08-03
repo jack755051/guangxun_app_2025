@@ -1,0 +1,10 @@
+# 忽略所有檔案，停用 Prettier
+**/*
+*.ts
+*.js
+*.json
+*.md
+src/
+test/
+dist/
+node_modules/
