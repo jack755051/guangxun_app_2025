@@ -1,0 +1,82 @@
+[
+    {
+        "imageUrl": "",
+        "title": "Guangxun_01_Title",
+        "subTitle": "Guangxun_01_Subtitle",
+        "description": "This is the 1st test card created via Postman.",
+        "tags": ["Guangxun_01_Tag_1", "Guangxun_01_Tag_2"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_02_Title",
+        "subTitle": "Guangxun_02_Subtitle",
+        "description": "This is the 2nd test card for development testing.",
+        "tags": ["Guangxun_02_Tag_1", "Guangxun_02_Tag_2", "Development"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_03_Title",
+        "subTitle": "Guangxun_03_Subtitle",
+        "description": "This is the 3rd test card featuring advanced functionality.",
+        "tags": ["Guangxun_03_Tag_1", "Advanced", "Feature"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_04_Title",
+        "subTitle": "Guangxun_04_Subtitle",
+        "description": "This is the 4th test card with multiple tag support.",
+        "tags": ["Guangxun_04_Tag_1", "Guangxun_04_Tag_2", "MultiTag", "Support"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_05_Title",
+        "subTitle": "Guangxun_05_Subtitle",
+        "description": "This is the 5th test card for UI component testing.",
+        "tags": ["UI", "Component", "Testing"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_06_Title",
+        "subTitle": "Guangxun_06_Subtitle",
+        "description": "This is the 6th test card demonstrating data flow.",
+        "tags": ["DataFlow", "Backend", "API"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_07_Title",
+        "subTitle": "Guangxun_07_Subtitle",
+        "description": "This is the 7th test card with validation features.",
+        "tags": ["Validation", "Security", "Guangxun_07_Tag"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_08_Title",
+        "subTitle": "Guangxun_08_Subtitle",
+        "description": "This is the 8th test card for performance testing.",
+        "tags": ["Performance", "Load", "Testing", "Optimization"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_09_Title",
+        "subTitle": "Guangxun_09_Subtitle",
+        "description": "This is the 9th test card with responsive design features.",
+        "tags": ["Responsive", "Design", "Mobile"],
+        "createdBy": "charlie010583"
+    },
+    {
+        "imageUrl": "",
+        "title": "Guangxun_10_Title",
+        "subTitle": "Guangxun_10_Subtitle",
+        "description": "This is the 10th test card completing the test dataset.",
+        "tags": ["Final", "Complete", "Dataset", "Guangxun_10_Tag"],
+        "createdBy": "charlie010583"
+    }
+]
