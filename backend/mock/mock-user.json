@@ -1,0 +1,42 @@
+[
+    {
+        "username": "charlie010583",
+        "email": "charlie010583@example.com",
+        "firstName": "Charlie",
+        "lastName": "Chen",
+        "role": "admin",
+        "isActive": true
+    },
+    {
+        "username": "user001",
+        "email": "user001@example.com",
+        "firstName": "Alice",
+        "lastName": "Wang",
+        "role": "user",
+        "isActive": true
+    },
+    {
+        "username": "user002",
+        "email": "user002@example.com",
+        "firstName": "Bob",
+        "lastName": "Lin",
+        "role": "user",
+        "isActive": true
+    },
+    {
+        "username": "user003",
+        "email": "user003@example.com",
+        "firstName": "Carol",
+        "lastName": "Wu",
+        "role": "user",
+        "isActive": true
+    },
+    {
+        "username": "user004",
+        "email": "user004@example.com",
+        "firstName": "David",
+        "lastName": "Chang",
+        "role": "moderator",
+        "isActive": true
+    }
+]
